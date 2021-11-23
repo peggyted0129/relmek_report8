@@ -1,0 +1,101 @@
+html, body {
+	scroll-behavior: smooth;
+	font-family: 'Roboto', Helvetica, Arial, 'Quicksand', 'Microsoft JhengHei', 'Noto Sans TC', sans-serif;
+	overflow-x: hidden;
+}
+img {
+	display: block;   
+	max-width: 100%;  
+	height: auto;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
+	line-height: 1.5;
+	margin-bottom: 0;
+} 
+h1, h2, h3, h4, h5, h6 {
+	font-size: 900;
+} 
+a {
+  display: block;
+  transition: all 0.5s;
+  &:hover {
+    text-decoration: none;
+		color: $dark;
+  }
+	&.fc-daygrid-day-number {
+		color: $dark;
+	}
+	&.fc-col-header-cell-cushion {
+		color: $dark;
+	}
+}
+ul,ol,li{
+	list-style: none;
+	padding: 0;
+	margin-bottom: 0;
+}
+.table th, .table td {
+  padding: 6px;
+	vertical-align: middle;
+	// border: 1px;
+}
+.table-responsive {
+	overflow-x: auto;
+	white-space: nowrap;
+}
+.bg{
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.bg-cover{
+	background-size: cover;
+}
+.bg-fixed{
+	background-attachment: fixed;
+}
+.btn-close:focus {
+	box-shadow: none
+}
+
+// ***** swal2 alert
+.swal2-container {
+  margin-top: 150px;
+}
+.swal2-popup.swal2-toast {
+  padding: 0.625em 2em !important;
+}
+
+// *** popup 樣式 *** //
+#popup, .bMulti {
+	background-color: #FFF;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 25px 5px #999;
+	color: #111;
+	display: none;
+	min-width: 450px;
+	min-height: 250px;
+	padding: 25px;
+}
+.popup-logo {
+	color: #2B91AF;
+}
+.popup-button.b-close, .popup-button.bClose {
+	border-radius: 7px 7px 7px 7px;
+	box-shadow: none;
+	font: bold 131% sans-serif;
+	padding: 0 6px 2px;
+	position: absolute;
+	right: -7px;
+	top: -7px;
+}
+.popup-button {
+	background-color: #2B91AF;
+	border-radius: 10px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+}
